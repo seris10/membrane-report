@@ -1,0 +1,115 @@
+{
+  "schema": "portfolio.data_manifest/1",
+  "project": "membrane_report",
+  "package_version": "0.1.0",
+  "dataset": {
+    "dandiset": "000020",
+    "version": "0.210913.1639",
+    "doi": "10.48324/dandi.000020/0.210913.1639",
+    "citation": "Allen Institute for Brain Science (2021) Patch-seq recordings from mouse visual cortex (Version 0.210913.1639) [Data set]. DANDI archive. https://doi.org/10.48324/dandi.000020/0.210913.1639",
+    "license": "CC-BY-4.0",
+    "modality_used": "intracellular electrophysiology (current clamp) only"
+  },
+  "retrieved": "2026-10-13",
+  "selection": {
+    "rule": "C0 X-series long-square protocols (X1PS_SubThresh with X3LP_Rheo or X4PS_SupraThresh); C1 file readable; C2 complete subthreshold sweeps at three or more hyperpolarizing amplitudes; C3 complete depolarizing sweeps at two or more amplitudes; C4 one cell per subject. Order: numeric session identifier, largest first. First qualifying cell = single-cell case; first five = the set.",
+    "log": "data/selection_log.csv"
+  },
+  "assets": [
+    {
+      "asset_id": "dfb0ee02-2eb4-4f80-8c3f-c40464c0bfa0",
+      "path_in_dandiset": "sub-1001658958/sub-1001658958_ses-1003336912_icephys.nwb",
+      "local_path": "data/raw/sub-1001658958_ses-1003336912_icephys.nwb",
+      "sha256": "aa945377fa81878ae6ac64a7c94075079d5b393d5a6b0bcf8d2f9a92b7745080",
+      "role": "first cell",
+      "download_url": "https://api.dandiarchive.org/api/assets/dfb0ee02-2eb4-4f80-8c3f-c40464c0bfa0/download/",
+      "cell_metadata": {
+        "subject_id": "1001658958",
+        "species": "Mus musculus",
+        "age": "P55.0D",
+        "sex": "M",
+        "genotype": "Vipr2-IRES2-Cre/wt;Slc32a1-IRES2-FlpO/wt;Ai65(RCFL-tdT)/wt",
+        "session_start_time": "2020-01-28 22:50:34.762000+00:00",
+        "recording_temperature": null,
+        "temperature_note": "the file records no bath or recording temperature"
+      }
+    },
+    {
+      "asset_id": "f7af39a7-3837-4635-ba76-9c96643405d0",
+      "path_in_dandiset": "sub-1001658946/sub-1001658946_ses-1003020741_icephys.nwb",
+      "local_path": "data/raw/sub-1001658946_ses-1003020741_icephys.nwb",
+      "sha256": "e927d9cb77a44b84ebdb276e752fb71c14c6f31c92aed0128439f1220eba1a40",
+      "role": "set",
+      "download_url": "https://api.dandiarchive.org/api/assets/f7af39a7-3837-4635-ba76-9c96643405d0/download/",
+      "cell_metadata": {
+        "subject_id": "1001658946",
+        "species": "Mus musculus",
+        "age": "P54.0D",
+        "sex": "M",
+        "genotype": "Vipr2-IRES2-Cre/wt;Slc32a1-IRES2-FlpO/wt;Ai65(RCFL-tdT)/wt",
+        "session_start_time": "2020-01-27 21:53:18.318000+00:00",
+        "recording_temperature": null,
+        "temperature_note": "the file records no bath or recording temperature"
+      }
+    },
+    {
+      "asset_id": "efc9ad53-a132-4d0c-b5f2-cd2992010925",
+      "path_in_dandiset": "sub-992435487/sub-992435487_ses-993959730_icephys.nwb",
+      "local_path": "data/raw/sub-992435487_ses-993959730_icephys.nwb",
+      "sha256": "0195c001189856a12915eb23fa27f353adbe89794fe50b29de2d9d75ac164e97",
+      "role": "set",
+      "download_url": "https://api.dandiarchive.org/api/assets/efc9ad53-a132-4d0c-b5f2-cd2992010925/download/",
+      "cell_metadata": {
+        "subject_id": "992435487",
+        "species": "Mus musculus",
+        "age": "P57.0D",
+        "sex": "M",
+        "genotype": "Oxtr-T2A-Cre/wt;Ai14(RCL-tdT)/wt",
+        "session_start_time": "2019-12-12 18:22:06.011000+00:00",
+        "recording_temperature": null,
+        "temperature_note": "the file records no bath or recording temperature"
+      }
+    },
+    {
+      "asset_id": "bd23fc6c-e58a-4663-adc9-37018f232f66",
+      "path_in_dandiset": "sub-992385550/sub-992385550_ses-993554324_icephys.nwb",
+      "local_path": "data/raw/sub-992385550_ses-993554324_icephys.nwb",
+      "sha256": "734afe43ed6c9a89f35e3d914abfe918e48794fb2525ba7eb14da1dea7278f41",
+      "role": "set",
+      "download_url": "https://api.dandiarchive.org/api/assets/bd23fc6c-e58a-4663-adc9-37018f232f66/download/",
+      "cell_metadata": {
+        "subject_id": "992385550",
+        "species": "Mus musculus",
+        "age": "P54.0D",
+        "sex": "F",
+        "genotype": "Etv1-CreERT2/wt;Sst-IRES-FlpO/wt;Ai65(RCFL-tdT)/wt",
+        "session_start_time": "2019-12-10 22:56:41.383000+00:00",
+        "recording_temperature": null,
+        "temperature_note": "the file records no bath or recording temperature"
+      }
+    },
+    {
+      "asset_id": "aa03e921-066d-4e78-9be1-e121ce03bef6",
+      "path_in_dandiset": "sub-992385491/sub-992385491_ses-993300347_icephys.nwb",
+      "local_path": "data/raw/sub-992385491_ses-993300347_icephys.nwb",
+      "sha256": "4cc7a8a55778e3f06a1aafe3381c99d7a5ccd065f9e30a465be894c5145122b4",
+      "role": "set",
+      "download_url": "https://api.dandiarchive.org/api/assets/aa03e921-066d-4e78-9be1-e121ce03bef6/download/",
+      "cell_metadata": {
+        "subject_id": "992385491",
+        "species": "Mus musculus",
+        "age": "P55.0D",
+        "sex": "M",
+        "genotype": "Sncg-IRES2-FlpO-neo/wt;Ai65F/wt",
+        "session_start_time": "2019-12-09 23:39:36.376000+00:00",
+        "recording_temperature": null,
+        "temperature_note": "the file records no bath or recording temperature"
+      }
+    }
+  ],
+  "transformations": [
+    "NWB CurrentClampSeries and matching stimulus series read with pynwb; value = data * conversion + offset, applied once; conversion and offset recorded per sweep in sweep_features.csv",
+    "only long-square protocols (X1PS_SubThresh, X3LP_Rheo, X4PS_SupraThresh) are read",
+    "trailing exact zeros or NaN of at least 1 ms are treated as padding after an aborted sweep"
+  ]
+}

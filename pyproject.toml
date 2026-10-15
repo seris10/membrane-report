@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "membrane-report"
+version = "0.1.0"
+description = "Quality control, features and passive-model checks for current-clamp recordings from DANDI 000020"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "BSD-3-Clause"
+dependencies = [
+    "numpy>=2.0",
+    "scipy>=1.11",
+    "pandas>=2.1",
+    "matplotlib>=3.8",
+    "pynwb>=3.0",
+    "h5py>=3.10",
+]
+
+[project.optional-dependencies]
+reference = ["ipfx>=2.1", "efel>=5.7"]
+test = ["pytest>=8"]
+
+[project.scripts]
+membrane-report = "membrane_report.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "network: needs internet access to the DANDI archive",
+    "slow: takes more than a few seconds",
+    "data: needs the pinned NWB files in data/raw",
+]
+addopts = "-m 'not network'"

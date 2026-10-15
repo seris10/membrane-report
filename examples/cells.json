@@ -1,0 +1,46 @@
+{
+  "description": "Cells analyzed in reports/dandi000020, chosen by tools/select_cells.py under the rule in src/membrane_report/selection.py; the full decision log is data/selection_log.csv.",
+  "retrieved": "2026-10-13",
+  "selection": {
+    "rule": "C0 X-series long-square protocols (X1PS_SubThresh with X3LP_Rheo or X4PS_SupraThresh); C1 file readable; C2 complete subthreshold sweeps at three or more hyperpolarizing amplitudes; C3 complete depolarizing sweeps at two or more amplitudes; C4 one cell per subject. Order: numeric session identifier, largest first. First qualifying cell = single-cell case; first five = the set.",
+    "log": "data/selection_log.csv"
+  },
+  "analysis": {"n_boot": 200, "seed": 20261013},
+  "cells": [
+    {
+      "role": "first cell",
+      "asset_id": "dfb0ee02-2eb4-4f80-8c3f-c40464c0bfa0",
+      "dandi_path": "sub-1001658958/sub-1001658958_ses-1003336912_icephys.nwb",
+      "path": "data/raw/sub-1001658958_ses-1003336912_icephys.nwb",
+      "sha256": "aa945377fa81878ae6ac64a7c94075079d5b393d5a6b0bcf8d2f9a92b7745080"
+    },
+    {
+      "role": "set",
+      "asset_id": "f7af39a7-3837-4635-ba76-9c96643405d0",
+      "dandi_path": "sub-1001658946/sub-1001658946_ses-1003020741_icephys.nwb",
+      "path": "data/raw/sub-1001658946_ses-1003020741_icephys.nwb",
+      "sha256": "e927d9cb77a44b84ebdb276e752fb71c14c6f31c92aed0128439f1220eba1a40"
+    },
+    {
+      "role": "set",
+      "asset_id": "efc9ad53-a132-4d0c-b5f2-cd2992010925",
+      "dandi_path": "sub-992435487/sub-992435487_ses-993959730_icephys.nwb",
+      "path": "data/raw/sub-992435487_ses-993959730_icephys.nwb",
+      "sha256": "0195c001189856a12915eb23fa27f353adbe89794fe50b29de2d9d75ac164e97"
+    },
+    {
+      "role": "set",
+      "asset_id": "bd23fc6c-e58a-4663-adc9-37018f232f66",
+      "dandi_path": "sub-992385550/sub-992385550_ses-993554324_icephys.nwb",
+      "path": "data/raw/sub-992385550_ses-993554324_icephys.nwb",
+      "sha256": "734afe43ed6c9a89f35e3d914abfe918e48794fb2525ba7eb14da1dea7278f41"
+    },
+    {
+      "role": "set",
+      "asset_id": "aa03e921-066d-4e78-9be1-e121ce03bef6",
+      "dandi_path": "sub-992385491/sub-992385491_ses-993300347_icephys.nwb",
+      "path": "data/raw/sub-992385491_ses-993300347_icephys.nwb",
+      "sha256": "4cc7a8a55778e3f06a1aafe3381c99d7a5ccd065f9e30a465be894c5145122b4"
+    }
+  ]
+}
